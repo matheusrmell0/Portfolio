@@ -12,7 +12,6 @@
   gap: 6.8rem;
   padding: 5.625rem 1.25rem 1rem 1.25rem;
   align-items: center;  
-  position: relative;
 }
 .footer-texto {
   font-size: 1.5rem;
@@ -258,26 +257,6 @@
   }
   .footer-copy{
     margin: 0;
-  }
-}
-@media (max-width: 375px) {
-  .footer-container::after {
-    content: "";
-    position: absolute;
-    display: block;
-    background: linear-gradient(#6d61f2, #3b30bf);
-    width: 2.5rem;
-    height: 0.6rem;
-    top: -35px;
-    border-radius: 1rem;
-    right: 1rem;
-    /* z-index: -1; */
-    border-radius: 1rem;
-  }
-}
-@media (max-width: 374px) {
-  .footer-container::after{
-    display: none;
   }
 }
 @media (max-width: 370px){
