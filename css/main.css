@@ -62,6 +62,7 @@
     width: 2.5rem;
     height: 0.625rem;
     left: 0rem;
+    border-radius: 0.25rem;
   }
 }
 @media (max-width: 530px){

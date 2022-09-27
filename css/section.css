@@ -266,10 +266,11 @@
     content: "";
     position: absolute;
     background: url("../img/icones/detalhe-intro.svg") no-repeat center;
-    width: 3rem;
+    width: 2.8rem;
     height: 0.625rem;
     z-index: -1;
-    top: 6.9rem;
+    top: 7.8rem;
+    border-radius: 0.25rem;
   }
   .experiencia {
     margin-top: 0;
@@ -293,24 +294,6 @@
   }
   .empresa-titulo2 {
     text-align: left;
-  }
-}
-@media (max-width: 375px) {
-  .experiencia::after {
-    content: "";
-    position: absolute;
-    display: block;
-    background: linear-gradient(#6d61f2, #3b30bf);
-    width: 12rem;
-    height: 1.9rem;
-    bottom: -66.7rem;
-    /* z-index: -1; */
-    border-radius: 1rem;
-  }
-}
-@media (max-width: 374px) {
-  .experiencia::after{
-    display: none;
   }
 }
 @media (max-width: 345px) {
