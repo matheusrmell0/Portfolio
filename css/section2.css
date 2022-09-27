@@ -1,0 +1,234 @@
+.formacao {
+  background-color: #181212;
+  margin: 0px;
+}
+.formacao-container {
+  background-color: #181212;
+  max-width: 1200px; /* 75rem */
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 7.5rem 1.25rem;
+  gap: 6.8rem;
+  position: relative;
+  /* align-items: center; */
+}
+.formacao-container .subtitulo {
+  max-width: 5ch;
+  color: #0d0909;
+}
+.formacao-container .subtitulo strong {
+  color: #000000;
+}
+
+/* FORMAÇÃO */
+.faculdade-lista {
+  justify-content: right;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.813rem;
+  margin-top: 1.563rem;
+  position: relative;
+}
+.faculdade {
+  flex: 1;
+  background-color: #090909;
+  border: 1px solid #000000;
+  border-radius: 0.313rem;
+  padding: 1.25rem 1.3rem 1.25rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+}
+.faculdade-tipo {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  text-transform: uppercase;
+  color: #525252;
+  margin-bottom: 0.625rem;
+}
+.faculdade-curso {
+  flex: 1;
+  font-size: 1.125rem;
+  line-height: 1.563rem;
+  text-transform: capitalize;
+  color: #ffffff;
+  /* width: 15ch; */
+  position: relative;
+}
+.faculdade-instituição {
+  font-size: 1.125;
+  line-height: 1.25rem;
+  text-transform: uppercase;
+  color: #525252;
+  margin-top: 1rem;
+}
+/* FORMAÇÃO */
+
+/* FORMAÇÃO EXTRA */
+.formacao-extra {
+  display: grid;
+  gap: 3.75rem;
+  margin-top: 5.6rem;
+}
+.cursos {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  color: #f2f0f0;
+  text-transform: capitalize;
+}
+.cursos-titulo {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #525252;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  position: relative;
+}
+.cursos span {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  text-align: right;
+  color: #525252;
+}
+.cursos-lista {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0.5rem 0 0.5rem 0;
+  text-align: center;
+}
+/* FORMAÇÃO EXTRA */
+
+/* IDIOMAS */
+.idiomas {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  color: #f2f0f0;
+  text-transform: capitalize;
+}
+.idiomas span {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  text-transform: capitalize;
+  color: #525252;
+}
+.idiomas li {
+  padding: 0.5rem 0 0 0;
+}
+/* IDIOMAS */
+
+/* DECORAÇÃO */
+.faculdade-curso::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background: linear-gradient(#6d61f2, #3b30bf);
+  width: 0.4rem;
+  height: 1.25rem;
+  left: -1.725rem;
+  border-radius: 0.05rem 0 0 0.05rem;
+}
+.formacao-extra h5::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  left: -2.25rem;
+  top: -0.3rem;
+}
+.cursos h5::before {
+  background: url("../img/icones/star-qualificaçoes.svg") no-repeat center
+    center;
+}
+.idiomas h5::before {
+  background: url("../img/icones/tradutor-idiomas.svg") no-repeat center center;
+}
+.formacao-container::after {
+  content: "";
+  width: 8.125rem;
+  height: 6.25rem;
+  background: url("../img/icones/detalhe-intro.svg") no-repeat center;
+  position: absolute;
+  bottom: -3.125rem;
+  left: 1.2rem;
+}
+/* DECORAÇÃO */
+
+/* RESPONSIVO */
+@media (max-width: 1200px) {
+  .formacao-container .subtitulo {
+    font-size: 8rem;
+    line-height: 9rem;
+  }
+  .formacao-container {
+    align-items: center;
+    text-align: left;
+  }
+}
+@media (max-width: 1140px) {
+  .formacao-container .subtitulo {
+    font-size: 7rem;
+    line-height: 8rem;
+  }
+}
+@media (max-width: 990px) {
+  .formacao-container::after {
+    width: 5rem;
+    height: 0.625rem;
+    bottom: 20px;
+  }
+  .formacao-container .subtitulo {
+    font-size: 6rem;
+    line-height: 7rem;
+  }
+}
+@media (max-width: 890px) {
+  .formacao-container::after {
+    width: 5rem;
+    height: 0.625rem;
+    bottom: 20px;
+  }
+  .formacao-container .subtitulo {
+    font-size: 5rem;
+    line-height: 6rem;
+  }
+}
+@media (max-width: 810px) {
+  .formacao-container {
+    grid-template-columns: 1fr;
+    padding: 3.75rem 1.25rem;
+    margin-left: 1.875rem;
+    margin-right: 1.875rem;
+    gap: 2.5rem;
+  }
+  .formacao-container .subtitulo {
+    max-width: initial !important;
+  }
+  .formacao-container::after {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  .formacao-container .subtitulo {
+    color: #f2f0f0;
+    margin-bottom: 1rem;
+  }
+  .formacao-container .subtitulo strong {
+    color: #f2f0f0;
+  }
+  .formacao-container {
+    margin-top: 1rem;
+  }
+}
+@media (max-width: 405px) {
+  .faculdade-lista::before {
+    display: none;
+  }
+}
+@media (max-width: 375px){
+  .formacao-container{
+    padding-bottom: 6rem;
+  }
+}
+/* RESPONSIVO */
