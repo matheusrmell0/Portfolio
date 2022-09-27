@@ -55,6 +55,12 @@
   position: relative;
   padding: 1.25rem;
   position: relative;
+  transition: .5s;
+}
+
+.empresa:hover{
+  background: #EBE9E9;
+  margin-right: 2px;
 }
 
 /* DECORAÇÃO */
@@ -87,6 +93,7 @@
   color: #525252;
   font-weight: 400;
   font-size: 0.875rem;
+  padding-right: 2px;
   line-height: 1.4;
 }
 

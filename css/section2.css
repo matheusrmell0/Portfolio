@@ -38,6 +38,10 @@
   padding: 1.25rem 1.3rem 1.25rem 1.25rem;
   display: flex;
   flex-direction: column;
+  transition: .5s;
+}
+.faculdade:hover{
+  background-color: #000000;
 }
 .faculdade-tipo {
   font-size: 0.875rem;

@@ -26,6 +26,10 @@
   flex: 1;
   flex-direction: column;
   gap: 1.25rem;
+  transition: .3s;
+}
+.footer-contato li a:hover{
+  color: #847B7B;
 }
 .footer-contato li {
   padding-left: 10rem;
