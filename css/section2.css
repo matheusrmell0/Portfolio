@@ -130,7 +130,12 @@
   width: 0.4rem;
   height: 1.25rem;
   left: -1.725rem;
+  right: 9rem;
   border-radius: 0.05rem 0 0 0.05rem;
+  transition: .15s;
+}
+.faculdade:hover .faculdade-curso::before{
+  background: linear-gradient( #6558EE, #261BA9);
 }
 .formacao-extra h5::before {
   content: "";
