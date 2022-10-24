@@ -1,6 +1,19 @@
-@import "./global.css";
-@import "./header.css";
-@import "./main.css";
-@import "./section.css";
-@import "./section2.css";
-@import "./footer.css";
+/* // Global */
+@import "./global/global.css";
+@import "./global/header.css";
+@import "./global/footer.css";
+
+/* // Topicos */
+@import "./resume.css";
+@import "./experience.css";
+@import "./graduation.css";
+
+/* // Utilidades */
+@import "./utilidades/tipografia.css";
+@import "./utilidades/cores.css";
+@import "./utilidades/animacao.css";
+
+
+/* *{
+  border: 1px solid gray;
+} */

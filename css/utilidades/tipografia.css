@@ -1,0 +1,131 @@
+.font-1-xxl {
+  font: 700 8.5rem/1.05 "Fira Sans", sans-serif;
+  text-transform: uppercase;
+}
+.font-1-xl {
+  font: 700 4.5rem/1.1 "Fira Sans", sans-serif;
+}
+.font-1-x {
+  font: 700 1.875rem/1.33 "Fira Sans", sans-serif;
+}
+.font-1-l {
+  font: 400 1.5rem/1.33 "Fira Sans", sans-serif;
+}
+.font-1b-s {
+  font: 700 1.125rem/1.11 "Fira Sans", sans-serif;
+}
+.font-1b-2s {
+  font: 700 1.125rem/1.39 "Fira Sans", sans-serif;
+}
+.font-1-s {
+  font: 400 1.125rem/1.11 "Fira Sans", sans-serif;
+}
+.font-1-sS {
+  font: 400 1rem/1.25 "Fira Sans", sans-serif;
+}
+.font-1-sSS {
+  font: 700 0.875rem/1.43 "Fira Sans", sans-serif;
+}
+.font-1m-sSS {
+  font: 400 0.875rem/1.43 "Fira Sans", sans-serif;
+}
+
+/* RESPONSIVO */
+@media (max-width: 1250px) {
+  .font-1-x {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 1200px) {
+  .font-1-xxl {
+    font-size: 7rem;
+  }
+}
+@media (max-width: 1150px) {
+  .font-1-xl {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 1040px) {
+  .font-1b-2s {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 1000px) {
+  .font-1b-2s {
+    font-size: 1rem;
+  }
+  .font-1-s {
+    font-size: 0.9rem;
+  }
+  .font-1m-sSS {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 890px) {
+  .font-1-l {
+    font-size: 1.35rem;
+  }
+}
+@media (max-width: 840px) {
+  .font-1-l {
+    font-size: 1.3rem;
+  }
+  .font-1-x {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 800px) {
+  .font-1-xxl {
+    font-size: 2rem;
+  }
+  .font-1-xl {
+    font-size: 3rem;
+  }
+  .font-1-l {
+    font-size: 1.1rem;
+  }
+  .font-1-x {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 720px) {
+  .font-1-xl {
+    font-size: 2.5rem;
+  }
+  .font-1-x {
+    font-size: 1.1rem;
+    font-weight: 400;
+  }
+}
+@media (max-width: 680px) {
+  .font-1-xl {
+    font-size: 2rem;
+  }
+  .font-1-l {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 650px) {
+  .font-1-x {
+    font-size: 1rem;
+  }
+  .font-1-l {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 600px) {
+  .font-1-s {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 550px) {
+  .font-1-s {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 400px) {
+  .font-1-s {
+    font-size: 0.8rem;
+  }
+}

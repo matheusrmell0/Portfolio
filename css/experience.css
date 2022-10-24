@@ -1,0 +1,232 @@
+.experience {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin-bottom: 90px;
+  gap: 120px;
+}
+
+.experience-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.experience-content > p {
+  margin-bottom: 40px;
+}
+
+.experience-content h3 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.experience-content h3::before {
+  content: "";
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(#6d61f2, #493dcc);
+  position: absolute;
+  left: -30px;
+}
+
+.exp-year {
+  position: absolute;
+  left: -90px;
+}
+
+.exp-project {
+  background: var(--gray0);
+  padding: 20px 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px 20px;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+.left20px{
+  margin-left: 20px;
+}
+.exp-project:hover {
+  background: var(--gray1);
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+.exp-project ul li:hover {
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+.exp-project p {
+  height: fit-content;
+  width: 41ch;
+}
+
+.exp-project ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-right: 26px;
+}
+
+.exp-project h4,
+h3 {
+  margin-bottom: 10px;
+  width: max-content;
+}
+
+.exp-project h4 {
+  margin-left: 70px;
+}
+.exp-project ul {
+  margin-left: 70px;
+}
+
+.exp-project ul li {
+  padding: 5px 10px;
+  background: #ffffff;
+  border-radius: 5px;
+}
+
+.experience-content > p {
+  max-width: 570px;
+}
+.text-none {
+  display: none;
+}
+
+
+/*  */
+
+@media (max-width: 1245px) {
+  .experience {
+    gap: 120px;
+  }
+  .exp-project p {
+    max-width: auto;
+    width: auto;
+  }
+  .experience-content > p {
+    max-width: auto;
+  }
+  .exp-project {
+    gap: 0px 50px;
+  }
+  .experience > h2 {
+    place-self: center;
+  }
+  .exp-project h4 {
+    margin-left: 40px;
+  }
+  .exp-project ul {
+    margin-left: 40px;
+  }
+}
+@media (max-width: 1185px) {
+  .experience {
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 1150px) {
+  .exp-project {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+  }
+  .exp-project::before {
+    content: "";
+    width: 4px;
+    height: 20px;
+    background: linear-gradient(#6d61f2, #493dcc);
+    position: absolute;
+    left: -4px;
+  }
+  .experience-content h3::before {
+    display: none;
+  }
+  .exp-project p {
+    margin-bottom: 10px;
+    max-width: max-content;
+  }
+  .exp-project ul {
+    gap: 15px;
+  }
+  .exp-project h4 {
+    margin-left: 0px;
+  }
+  .exp-project ul {
+    margin-left: 0px;
+  }
+}
+@media (max-width: 985px) {
+  .exp-project {
+    gap: 5px;
+    padding: 20px;
+  }
+  .exp-project ul {
+    gap: 10px;
+  }
+  .exp-project ul li {
+    padding: 5px 8px;
+  }
+  .experience-content > p {
+    display: none;
+  }
+  .text-none {
+    align-self: center;
+    display: block;
+  }
+  .experience > h2 {
+    display: none;
+    width: max-content;
+  }
+  .experience {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 875px) {
+  .exp-project ul li {
+    padding: 5px 7px;
+  }
+  .exp-project ul {
+    gap: 8px;
+  }
+}
+@media (max-width: 770px) {
+  .exp-project {
+    display: grid;
+    gap: 0px 10px;
+  }
+}
+@media (max-width: 740px) {
+  .exp-project {
+    display: flex;
+  }
+  .exp-project p,
+  h3 {
+    margin-bottom: 15px;
+  }
+  .exp-project h4 {
+    place-self: start;
+    margin-bottom: 15px;
+    margin-left: 0px;
+  }
+  .exp-project ul {
+    justify-content: left;
+    margin: 0px;
+  }
+}
+@media (max-width: 550px) {
+  .experience {
+    gap: 25px;
+    margin-bottom: 35px;
+  }
+}
+@media (max-width: 400px) {
+  .experience {
+    gap: 25px;
+  }
+}

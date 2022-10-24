@@ -1,0 +1,164 @@
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  gap: 20px;
+}
+header a {
+  padding: 10px 20px;
+  border-radius: 4px;
+  display: block;
+}
+header a:hover {
+  background: #f2f2f2;
+  transition: 0.4s;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.2);
+}
+
+/*  */
+@media (max-width: 1220px) {
+  header a {
+    background: #f2f2f2;
+    padding: 12px 24px;
+    border-radius: 4px;
+    display: block;
+  }
+}
+@media (max-width: 1000px) {
+  header a {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 975px) {
+  .header {
+    margin-bottom: 40px;
+  }
+  header a {
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 665px) {
+  .header a {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 30px;
+  }
+  .header a{
+    padding: 15px 30px;
+  }
+  .header nav ul{
+    gap: 30px;
+  }
+}
+@media (max-width: 550px) {
+  .header {
+    margin-bottom: 0px;
+    margin-top: 15px;
+    align-items: start;
+  }
+  header{
+    background-color: var(--gray3);
+    padding-bottom: 30px;
+    padding-top: 15px;
+  }
+  .header svg {
+    width: 100px;
+  }
+  .header a{
+    padding: 10px 20px;
+  }
+  .header nav ul{
+    gap: 20px;
+  }
+}
+@media (max-width: 450px) {
+  .header {
+    margin-bottom: 0px;
+    align-items: center;
+  }
+  .header svg {
+    width: 90px;
+  }
+  .header a{
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+  .header nav ul{
+    gap: 15px;
+  }
+}
+@media (max-width: 420px) {
+  .header a {
+    padding: 10px 18px;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 405px) {
+  .header a {
+    padding: 10px 15px;
+  }
+}
+@media (max-width: 390px) {
+  .header a {
+    padding: 10px 12px;
+  }
+}
+@media (max-width: 370px) {
+  .header nav ul {
+    gap: 10px;
+  }
+}
+@media (max-width: 360px) {
+  .header nav ul {
+    gap: 10px;
+  }
+  .header a{
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 340px) {
+  .header nav ul {
+    gap: 10px;
+  }
+  .header a{
+    padding: 8px 10px;
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 325px) {
+  .header nav ul {
+    gap: 5px;
+  }
+}
+@media (max-width: 315px) {
+  .header nav ul {
+    gap: 5px;
+  }
+  .header a{
+    padding: 8px 8px;
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 305px) {
+  .header nav ul {
+    gap: 5px;
+  }
+  .header a{
+    padding: 10px 8px;
+    font-size: 0.8rem;
+  }
+}
+
+

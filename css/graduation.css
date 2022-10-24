@@ -1,0 +1,336 @@
+.graduation {
+  background: #181212;
+  padding: 120px 0;
+}
+
+.graduation-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 140px;
+  position: relative;
+}
+
+.graduation-courses {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 90px;
+  justify-content: right;
+}
+
+.graduation-courses li {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px 31px;
+  background: #090909;
+  border: 1px solid var(--black);
+  border-radius: 5px;
+}
+
+.graduation-courses li:hover {
+  background: #050505;
+  transition: 0.8s;
+}
+
+.graduation-courses li h3::before {
+  content: "";
+  width: 4px;
+  height: 20px;
+  background: var(--temagrad);
+  position: absolute;
+  left: -36px;
+}
+
+.graduation-courses li span {
+  margin-bottom: 5px;
+}
+
+.graduation-courses li h3 {
+  position: relative;
+  max-width: 150px;
+  flex: 1;
+}
+
+.graduation-complement {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.graduation-complement h4 {
+  margin-bottom: 30px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.graduation-complement h4::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 24px;
+  height: 24px;
+  left: -40px;
+  top: -4.8px;
+}
+
+.graduation-complement ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.graduation-complement ul li:not(.graduation-complement-language li) {
+  display: flex;
+  justify-content: space-between;
+}
+
+.graduation-complement h4:not(.graduation-complement-language h4):before {
+  background: url("../img/icones/star-qualificaçoes.svg");
+}
+
+.graduation-complement-language h4::before {
+  background: url("../img/icones/tradutor-idiomas.svg");
+}
+
+.graduation-content::after {
+  content: "";
+  background: url("../img/icones/detalhe-intro.svg") no-repeat;
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  top: 677px;
+}
+
+/*  */
+@media (max-width: 1320px) {
+  .graduation-content::after {
+    margin-left: 25px;
+  }
+}
+@media (max-width: 1250px) {
+  .graduation-courses {
+    gap: 20px;
+    margin-bottom: 70px;
+  }
+  .graduation {
+    padding: 90px 0;
+  }
+  .graduation-content::after {
+    background: url("../img/icones/intro-detalhe-120px.svg") no-repeat;
+    top: 645px;
+  }
+}
+@media (max-width: 1245px) {
+  .graduation-content {
+    gap: 120px;
+  }
+  .graduation-content h3 {
+    place-self: center;
+  }
+  .graduation-courses {
+    justify-content: left;
+  }
+}
+@media (max-width: 1210px) {
+  .graduation-courses {
+    justify-content: center;
+    gap: 15px;
+  }
+}
+@media (max-width: 1185px) {
+  .graduation-courses li {
+    padding: 20px 30px;
+  }
+}
+@media (max-width: 1175px) {
+  .graduation-courses li {
+    padding: 20px 25px;
+  }
+  .graduation-courses li h3::before {
+    left: -30px;
+  }
+  .graduation {
+    padding: 60px 0;
+  }
+  .graduation-content::after {
+    top: 610px;
+  }
+}
+@media (max-width: 1130px) {
+  .graduation-courses li {
+    padding: 20px;
+  }
+  .graduation-courses li h3::before {
+    left: -25px;
+  }
+}
+@media (max-width: 1085px){
+  .graduation-content::after {
+    top: 600px;
+  }
+  .graduation-courses li {
+    padding: 15px;
+  }
+  .graduation-courses li h3::before {
+    left: -20px;
+  }
+}
+@media (max-width: 1040px) {
+  .graduation-courses {
+    gap: 10px;
+  }
+}
+@media (max-width: 1030px){
+  .graduation-content::after {
+    top: 590px;
+  }
+  .graduation-courses li {
+    padding: 10px 5px 10px 15px;
+  }
+}
+@media (max-width: 1000px){
+  .graduation-content::after {
+    top: 580px;
+  }
+  .graduation-courses li {
+    padding: 10px 5px 10px 10px;
+  }
+  .graduation-courses li h3::before {
+    left: -15px;
+  }
+  .graduation-courses {
+    justify-content: left;
+  }
+}
+@media (max-width: 985px) {
+  .graduation-content::after {
+    background: url("../img/icones/intro-detalhe-60px.svg") no-repeat;
+    top: 617px;
+    left: 15px;
+  }
+  .graduation-content {
+    grid-template-columns: 1fr;
+  }
+  .graduation-content > h3 {
+    display: none;
+  }
+  .graduation-courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  .graduation-courses li {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 31px;
+  }
+  .graduation-courses li h3::before {
+    display: none;
+  }
+  .graduation-courses li h3 {
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+    max-width: 220px;
+  }
+  .graduation-complement h4::before {
+    display: none;
+  }
+  .graduation-complement {
+    border-radius: 5px;
+    padding: 30px 25px;
+    background: #090909;
+    border: 1px solid var(--black);
+  }
+  .graduation-complement:hover {
+    background: #050505;
+    transition: 0.3s;
+  }
+}
+@media (max-width: 970px) {
+  .graduation-courses span {
+    position: relative;
+  }
+  .graduation-courses span::before {
+    content: "";
+    width: 4px;
+    height: 20px;
+    background: var(--temagrad);
+    position: absolute;
+    left: -36px;
+    top: 40px;
+  }
+}
+@media (max-width: 945px) {
+  .graduation-courses li h3 {
+    margin: 0;
+    width: auto;
+  }
+  .graduation-content::after {
+    top: 610px;
+  }
+}
+@media (max-width: 865px){
+  .graduation-content::after {
+    display: none;
+  }
+  footer {
+    position: relative;
+  }
+  footer::before {
+    content: "";
+    position: absolute;
+    background: url("../img/icones/detalhe-mobile.svg") no-repeat;
+    width: 70px;
+    height: 20px;
+    top: -8px;
+    left: 25px;
+  }
+}
+@media (max-width: 760px) {
+  .graduation-courses li h3 {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 720px) {
+  .graduation-courses {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: left;
+    flex: 1;
+  }
+  .graduation-courses li:hover {
+    margin-right: 2px;
+    transition: 0.3s;
+  }
+  .graduation-courses li h3 {
+    max-width: auto;
+    width: auto;
+    place-self: start;
+    max-width: 400px;
+  }
+}
+@media (max-width: 550px){
+  .graduation{
+    padding: 40px 0;
+  }
+}
+@media (max-width: 400px){
+  .graduation-content {
+    position: relative;
+  }
+  .graduation-content::before {
+    content: "";
+    position: absolute;
+    background: url("../img/icones/detalhe-mobile.svg") no-repeat;
+    width: 70px;
+    height: 20px;
+    right: 25px;
+    top: -47px;
+  }
+}
+
+
