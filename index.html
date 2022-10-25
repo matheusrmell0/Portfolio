@@ -12,11 +12,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="preload" href="./css/style.min.css" as="style">
+  <link rel="stylesheet" href="./css/style.min.css">
   <script>document.documentElement.classList.add('js');</script>
   <title>Matheus R Mello</title>
 </head>
 
-<body>
+<body id="index">
   <header class="container">
     <div class="header">
       <svg width="118" height="38" viewBox="0 0 118 38" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -54,7 +55,7 @@
     <div class="experience-content">
       <p class="font-1-l gray11 fadeInRight" data-anime="400">Desenvolvo pequenos projetos como o Bikcraft utilizando apenas <strong class="gray13">HTML</strong>, <strong class="gray13">CSS</strong> e <strong class="gray13">JavaScript</strong>. Para aplicativos web como a rede social Dogs eu trabalhei no <strong class="gray13">UX</strong> e <strong class="gray13">UI</strong> Design do projeto.</p>
 
-      <div class="exp-project left20px exp-project-data1 opacity-0 fadeInLeft" data-anime="700">
+      <a href="https://github.com/matheusrmell0/bikcraft-treino-estudo" class="gray13 exp-project left20px exp-project-data1 opacity-0 fadeInLeft" data-anime="700">
         <h3 class="font-1b-s"><span class="exp-year font-1m-sSS gray9">2022</span>Bikcraft</h3>
         <h4 class="font-1b-s">Desenvolvedor Júnior</h4>
         <p class="font-1m-sSS gray12">Desenvolvo pequenos projetos como o Bikcraft utilizando apenas HTML, CSS e JavaScript. Para aplicativos web como a rede social Dogs.</p>
@@ -65,9 +66,9 @@
           <li>UX Design</li>
           <li>UI Design</li>
         </ul>
-      </div>
+      </a>
 
-      <div class="exp-project left20px exp-project-data2 opacity-0 fadeInLeft" data-anime="900">
+      <div class="gray13 exp-project left20px exp-project-data2 opacity-0 fadeInLeft" data-anime="900">
         <h3 class="font-1b-s"><span class="exp-year font-1m-sSS gray9">2022</span>Surfbot</h3>
         <h4 class="font-1b-s">Desenvolvedor Júnior</h4>
         <p class="font-1m-sSS gray12">Surfbot é uma empresa que oferece aulas de surf no Rio de Janeiro. O projeto foi feito com HTML, CSS e JavaScript. Todo o projeto foi feito do zero.</p>
@@ -80,7 +81,7 @@
         </ul>
       </div>
 
-      <div class="exp-project left20px exp-project-data3 opacity-0 fadeInLeft" data-anime="1100">
+      <div class="gray13 exp-project left20px exp-project-data3 opacity-0 fadeInLeft" data-anime="1100">
         <h3 class="font-1b-s"><span class="exp-year font-1m-sSS gray9">2022</span>Brafé</h3>
         <h4 class="font-1b-s">Desenvolvedor Júnior</h4>
         <p class="font-1m-sSS gray12">Mais de 3 projetos foram desenvolvidos para a empresa Brafé. Eu trabalhei na criação do email marketing e também no HTML.</p>
@@ -96,29 +97,29 @@
   </section>
 
   <section class="graduation" aria-label="Formação" id="formacao">
-    <div class="container graduation-content">
-      <h3 class="font-1-xxl gray14">FOR<span class="black">M</span><br>AÇ<span class="black">Ã</span>O</h3>
+    <div class="container-2 graduation-content">
+      <h3 class="font-1-xxl gray14 fadeInLeft" data-anime="900">FOR<span class="black">M</span><br>AÇ<span class="black">Ã</span>O</h3>
 
       <div>
-          <ul class="graduation-courses white">
-            <li>
-              <span class="font-1m-sSS gray11">BACHAREL</span>
-              <h3 class="font-1b-2s">Engenharia Ambiental & Sanitária</h3>
-              <p class="font-1-s gray11">PITGV</p>
-            </li>
-            <li>
-              <span class="font-1m-sSS gray11">CURSOS INTENSIVOS</span>
-              <h3 class="font-1b-2s">Desenvolvedor Front End</h3>
-              <p class="font-1-s gray11">ORIGAMID</p>
-            </li>
-            <li>
-              <span class="font-1m-sSS gray11">CURSOS INTENSIVOS</span>
-              <h3 class="font-1b-2s">CS50’S Introduction To Computer Science</h3>
-              <p class="font-1-s gray11">CS50X</p>
-            </li>
-          </ul>
+        <ul class="graduation-courses white fadeInRight" data-anime="800">
+          <li class="graduation-courses-1 opacity-0 fadeInLeft" data-anime="1000">
+            <span class="font-1m-sSS gray11">BACHAREL</span>
+            <h3 class="font-1b-2s">Engenharia Ambiental & Sanitária</h3>
+            <p class="font-1-s gray11">PITGV</p>
+          </li>
+          <li class="graduation-courses-2 opacity-0 fadeInLeft" data-anime="1200">
+            <span class="font-1m-sSS gray11">CURSOS INTENSIVOS</span>
+            <h3 class="font-1b-2s">Desenvolvedor Front End</h3>
+            <p class="font-1-s gray11">ORIGAMID</p>
+          </li>
+          <li class="graduation-courses-3 opacity-0 fadeInLeft" data-anime="1400">
+            <span class="font-1m-sSS gray11">CURSOS INTENSIVOS</span>
+            <h3 class="font-1b-2s">CS50’S Introduction To Computer Science</h3>
+            <p class="font-1-s gray11">CS50X</p>
+          </li>
+        </ul>
 
-        <div class="graduation-complement white">
+        <div class="graduation-complement white fadeInRight" data-anime="800">
           <div>
             <h4 class="font-1-sSS gray11">QUALIFICAÇÕES E CURSOS COMPLEMENTARES</h4>
             <ul class="font-1-sS">
@@ -143,8 +144,8 @@
 
   <footer id="contato">
     <div class="container footer">
-      <p class="font-1-l gray3">Disponível para novos projetos.<br>Entre em contato e marcamos uma conversa.</p>
-      <ul class="font-1-x gray0">
+      <p class="font-1-l gray3 opacity-0 fadeInLeft" data-anime="1100">Disponível para novos projetos.<br>Entre em contato e marcamos uma conversa.</p>
+      <ul class="font-1-x gray0 opacity-0 fadeInRight" data-anime="1100">
         <li>+55 33 99833-4609</li>
         <li><a class="gray0" href="https://www.linkedin.com/in/matheusrmello/">in/matheusrmello</a></li>
         <li><a class="gray0" href="https://github.com/matheusrmell0">github.com/matheusrmell0</a></li>

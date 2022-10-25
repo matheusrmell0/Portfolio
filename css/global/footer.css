@@ -7,11 +7,12 @@ footer {
   grid-template-columns: 1fr 1fr;
   gap: 140px;
   align-items: center;
-  padding: 140px 20px 15px;
+  padding: 140px 0px 15px;
 }
 
 .footer > span {
   grid-column: span 2;
+  margin: 0px 20px;
 }
 
 .footer ul {
@@ -30,7 +31,7 @@ footer {
 .footer > p::after {
   content: "";
   position: absolute;
-  right: -115px;
+  right: -102px;
   width: 1px;
   height: 220px;
   background: var(--gray13);
@@ -88,17 +89,19 @@ footer {
     flex-direction: column;
     padding: 25px;
     place-items: start;
-    gap: 40px;
-    padding: 60px 30px 15px;
+    gap: 20px;
+    padding: 60px 0px 15px;
   }
   .footer ul {
     gap: 10px;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
+    margin-left: 20px;
   }
   .footer:after {
     display: none;
   }
   .footer > p {
+    margin-left: 20px;
     max-width: auto;
     margin-bottom: 20px;
   }

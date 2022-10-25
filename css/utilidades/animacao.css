@@ -37,7 +37,7 @@
 }
 .js .opacity-0.opacity-1-right{
   opacity: 1;
-  transform: translate3d(5px, 0, 0);
+  transform: translate3d(20px, 0, 0);
   transition: transform 0.8s, opacity 0.8s;
 }
 .js .opacity-0.opacity-1-s{

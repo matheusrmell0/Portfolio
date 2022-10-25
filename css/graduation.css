@@ -12,7 +12,6 @@
 
 .graduation-courses {
   display: flex;
-  flex-wrap: wrap;
   gap: 30px;
   margin-bottom: 90px;
   justify-content: right;
@@ -58,6 +57,7 @@
   gap: 60px;
 }
 
+
 .graduation-complement h4 {
   margin-bottom: 30px;
   position: relative;
@@ -102,10 +102,17 @@
   top: 677px;
 }
 
+
 /*  */
 @media (max-width: 1320px) {
   .graduation-content::after {
     margin-left: 25px;
+  }
+}
+@media (max-width: 1250px) {
+  .graduation-courses {
+    margin-right: 0px;
+    margin-bottom: 60px;
   }
 }
 @media (max-width: 1250px) {
@@ -129,21 +136,23 @@
     place-self: center;
   }
   .graduation-courses {
-    justify-content: left;
+    justify-content: right;
   }
 }
 @media (max-width: 1210px) {
   .graduation-courses {
-    justify-content: center;
+    justify-content: right;
     gap: 15px;
   }
 }
-@media (max-width: 1185px) {
+@media (max-width: 1200px) {
+}
+@media (max-width: 1195px) {
   .graduation-courses li {
     padding: 20px 30px;
   }
 }
-@media (max-width: 1175px) {
+@media (max-width: 1185px) {
   .graduation-courses li {
     padding: 20px 25px;
   }
@@ -156,8 +165,16 @@
   .graduation-content::after {
     top: 610px;
   }
+  .graduation-courses {
+    gap: 30px;
+  }
 }
-@media (max-width: 1130px) {
+@media (max-width: 1160px) {
+  .graduation-courses li {
+    padding: 20px 23px;
+  }
+}
+@media (max-width: 1140px) {
   .graduation-courses li {
     padding: 20px;
   }
@@ -165,7 +182,7 @@
     left: -25px;
   }
 }
-@media (max-width: 1085px){
+@media (max-width: 1115px) {
   .graduation-content::after {
     top: 600px;
   }
@@ -176,20 +193,26 @@
     left: -20px;
   }
 }
-@media (max-width: 1040px) {
+@media (max-width: 1070px) {
   .graduation-courses {
-    gap: 10px;
+    gap: 30px;
   }
 }
-@media (max-width: 1030px){
+@media (max-width: 1055px) {
   .graduation-content::after {
     top: 590px;
   }
   .graduation-courses li {
-    padding: 10px 5px 10px 15px;
+    padding: 10px 5px 15px 20px;
+  }
+  .graduation-courses li h3::before {
+    left: -25px;
+  }
+  .graduation-courses {
+    gap: 20px;
   }
 }
-@media (max-width: 1000px){
+@media (max-width: 1015px) {
   .graduation-content::after {
     top: 580px;
   }
@@ -248,8 +271,6 @@
     background: #050505;
     transition: 0.3s;
   }
-}
-@media (max-width: 970px) {
   .graduation-courses span {
     position: relative;
   }
@@ -272,7 +293,7 @@
     top: 610px;
   }
 }
-@media (max-width: 865px){
+@media (max-width: 865px) {
   .graduation-content::after {
     display: none;
   }
@@ -313,12 +334,12 @@
     max-width: 400px;
   }
 }
-@media (max-width: 550px){
-  .graduation{
+@media (max-width: 550px) {
+  .graduation {
     padding: 40px 0;
   }
 }
-@media (max-width: 400px){
+@media (max-width: 400px) {
   .graduation-content {
     position: relative;
   }
@@ -332,5 +353,3 @@
     top: -47px;
   }
 }
-
-

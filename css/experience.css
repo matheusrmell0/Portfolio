@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   margin-bottom: 90px;
-  gap: 120px;
+  gap: 130px;
 }
 
 .experience-content {
