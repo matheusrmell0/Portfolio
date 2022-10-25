@@ -158,4 +158,28 @@ if (document.getElementById("index")) {
 }
 //
 
+// TRANSIÇÃO SUAVE
+const navLinks = document.querySelectorAll('.header a[href^="#"]');
+
+function getDistanceFromTheTop(element){
+  const id = element.getAttribute('href');
+  return document.querySelector(id).offsetTop;
+}
+
+function nativeScroll(distanceFromTheTop){
+  window.scroll({
+    top: distanceFromTheTop,
+    behavior: 'smooth',
+  });
+}
+
+function scrollToSection(event){
+  const distanceFromTheTop = getDistanceFromTheTop(event.target) - 20;
+  nativeScroll(distanceFromTheTop);
+}
+
+navLinks.forEach((smoothMenu)=>{smoothMenu.addEventListener('click', scrollToSection)});
+//
+
+
 console.log("❤ ✔ By Mello 😃");

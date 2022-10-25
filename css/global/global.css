@@ -13,6 +13,10 @@
   margin: 0 auto;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   margin: 0px;
   margin-top: 40px;
