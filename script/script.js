@@ -165,14 +165,12 @@ function getDistanceFromTheTop(element){
   const id = element.getAttribute('href');
   return document.querySelector(id).offsetTop;
 }
-
 function nativeScroll(distanceFromTheTop){
   window.scroll({
     top: distanceFromTheTop,
     behavior: 'smooth',
   });
 }
-
 function scrollToSection(event){
   const distanceFromTheTop = getDistanceFromTheTop(event.target) - 20;
   nativeScroll(distanceFromTheTop);
